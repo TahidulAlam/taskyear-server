@@ -35,7 +35,7 @@ const verifyToken = async (req, res, next) => {
     next();
   });
 };
-// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.hzpl6mp.mongodb.net/?retryWrites=true&w=majority`;
+
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.w9927an.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   serverApi: {
@@ -102,7 +102,7 @@ async function run() {
     });
 
     console.log(
-      "Pinged your deployment. You successfully connected to MongoDB!"
+      "Taskyear Pinged your deployment. You successfully connected to MongoDB!"
     );
   } finally {
     // await client.close();
